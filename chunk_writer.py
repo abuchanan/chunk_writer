@@ -79,7 +79,6 @@ class DirChunk(FileChunk):
 
     def __init__(self, size, name):
         self.dir = os.path.dirname(name)
-        print self.dir
         os.makedirs(self.dir)
         super(DirChunk, self).__init__(size, name)
 
